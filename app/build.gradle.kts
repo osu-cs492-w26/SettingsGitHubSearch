@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.preference.ktx)
 
     implementation(libs.retrofit2.retrofit)
     implementation(libs.retrofit2.convertermoshi)

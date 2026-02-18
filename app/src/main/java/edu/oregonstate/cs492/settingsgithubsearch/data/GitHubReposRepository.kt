@@ -8,10 +8,10 @@ class GitHubReposRepository(
     private val service: GitHubService,
     private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
 ) {
-    suspend fun loadReposSearch(query: String): Result<List<GitHubRepo>> =
+    suspend fun loadReposSearch(query: String, sort: String): Result<List<GitHubRepo>> =
         withContext(ioDispatcher) {
             try {
-                val res = service.searchRepositories(query)
+                val res = service.searchRepositories(query, sort)
                 if (res.isSuccessful) {
                     Result.success(res.body()?.items ?: listOf())
                 } else {

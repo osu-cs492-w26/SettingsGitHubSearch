@@ -8,6 +8,14 @@
         android:id="@+id/github_search"
         android:name="edu.oregonstate.cs492.settingsgithubsearch.ui.GitHubSearchFragment"
         android:label="@string/label_github_search">
+        <action
+            android:id="@+id/navigate_to_settings"
+            app:destination="@id/settings" />
     </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:label="@string/label_settings"
+        android:name="edu.oregonstate.cs492.settingsgithubsearch.ui.SettingsFragment" />
 
 </navigation>

@@ -7,6 +7,7 @@
 
     <string name="label_github_search">GitHub Search</string>
     <string name="label_github_repo_detail">Repo Details</string>
+    <string name="label_settings">Settings</string>
 
     <string name="action_open_in_browser">View on GitHub</string>
     <string name="action_share">Share</string>
